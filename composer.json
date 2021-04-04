@@ -1,0 +1,40 @@
+{
+  "name": "adamswenson/lti-utlities",
+  "description": "LTI library for laravel",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "adam",
+      "email": "adam.swenson@csun.edu"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0|^7.0|^8.0|^9.0",
+    "orchestra/testbench": "^3.4|^4.0|^5.0|^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AdamSwenson\\LTIUtilities\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AdamSwenson\\LTIUtilities\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AdamSwenson\\LTIUtilities\\Providers\\ClosureTableServiceProvider"
+      ]
+    }
+  }
+}
